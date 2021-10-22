@@ -9,11 +9,9 @@ const assertEqual = function(actual, expected) {
 const eqArrays = (arr1, arr2) => {
   for(let i = 0; i < 3 ; i ++) {
     if(arr1[i] !== arr2[i]){
-      console.log(false)
       return false
     }
   }
-  console.log(true) 
   return true
 }
 
