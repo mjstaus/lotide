@@ -1,3 +1,11 @@
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`⭐️⭐️⭐️ Assertion Passed: [${actual}] === [${expected}]`);
+  } else {
+    console.log(`🔥🔥🔥 Assertion Failed: [${actual}] !== [${expected}]`);
+  }
+};
+
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
     return false;
@@ -19,26 +27,33 @@ const assertArraysEqual = (arr1, arr2) => {
 };
 
 // MAIN FUNCTION
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
+  const string = sentence.toLowerCase();
   const results = {};
-  for (let letter of sentence) {
+  for (let i = 0; i < string.length; i++) {
+    let letter = string[i]; //set variable just for readability
     if (letter !== " ") {
       if (results[letter]) {
-        console.log(sentence.indexOf(letter))
-        results[letter].push(sentence.indexOf(letter));
+        results[letter].push(i);
       } else {
-        results[letter] = [sentence.indexOf(letter)];
-        console.log(results)
+        results[letter] = [i];
       }
     }
   }
   return results;
 };
 
-console.log(letterPositions('hello'))
-/* Loop through sentence using for..of
-    if letter is a space, skip it
-    if results[letter] exists, push letter index into value (array)
-    if result[letter] doens't exist, set new property (key = letter, letter index as value (array) )
-    end loop
-    return results*/
+// TEST CASES
+const result1 = letterPositions('hello');
+assertArraysEqual(result1['h'], [0]);
+assertArraysEqual(result1['l'], [2, 3]);
+
+const result2 = letterPositions('hello my name is Earl');
+assertArraysEqual(result2["e"], [1, 12, 17]);
+assertArraysEqual(result2["n"], [9]);
+assertEqual(result2[" "], undefined);
+assertEqual(result2["z"], undefined);
+
+
+
+
