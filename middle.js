@@ -23,7 +23,7 @@ const assertArraysEqual = (arr1, arr2) => {
 const middle = (arr) => {
   if (arr.length < 3) { //check if array is at least 3 (otherwise return empty array)
     return [];
-  } else if (arr.length % 2) { //Check if arr.length divisible by 2 (will have single middle value)
+  } else if (arr.length % 2) { //Check if arr.length divisible by 2 (will have single middle value if truthy/not div by 2)
     return [arr[(arr.length - 1) / 2]];
   } else {
     return [arr[Math.floor((arr.length - 1) / 2)], arr[Math.ceil((arr.length - 1) / 2)]];
@@ -38,4 +38,3 @@ assertArraysEqual(middle([1, 2, 3]), [2]);
 assertArraysEqual(middle([1]), []);
 assertArraysEqual(middle(["Ellie", "Abby", "Dina"]), ["Abby"]);
 assertArraysEqual(middle(["1", "2", "3", "4"]), ["2", "3"]);
-
