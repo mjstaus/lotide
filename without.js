@@ -35,17 +35,18 @@ const without = (source, itemsToRemove) => {
 };
 
 
-assertArraysEqual(without([1, 2, 3], [1]), [2,3]); // true
-assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); //true
-assertArraysEqual(without([1, 2, 3], [1]), [3]); //false
-assertArraysEqual(without([1, 2, 3], []), [1]); //false
-assertArraysEqual(without([1], [1]), []);//true
-assertArraysEqual(without([], []), []);//true
+//TEST CODE
+// assertArraysEqual(without([1, 2, 3], [1]), [2,3]); // true
+// assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); //true
+// assertArraysEqual(without([1, 2, 3], [1]), [3]); //false
+// assertArraysEqual(without([1, 2, 3], []), [1]); //false
+// assertArraysEqual(without([1], [1]), []);//true
+// assertArraysEqual(without([], []), []);//true
 
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouse"]); // no need to capture return value for this test case
+// // Make sure the original array was not altered by the without function
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 // Refactor using filter: *Filter method creates new array with all elements that pass the test implemented by the callback.
 // Callback function needs to return el !== itemsToRemove

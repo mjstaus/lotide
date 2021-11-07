@@ -29,14 +29,14 @@ const countLetters = (input) => {
 
 
 // TEST CASES
-const result1 = countLetters("NEWSFLASH: Ellie wins dog of the year award");
-const result2 = countLetters();
-const result3 = countLetters(" ");
-console.log(result3);
+// const result1 = countLetters("NEWSFLASH: Ellie wins dog of the year award");
+// const result2 = countLetters();
+// const result3 = countLetters(" ");
+// console.log(result3);
 
-assertEqual(result1["e"], 5);
-assertEqual(result1["l"], 3);
-assertEqual(result2, undefined);
-assertEqual(result3, undefined);
+// assertEqual(result1["e"], 5);
+// assertEqual(result1["l"], 3);
+// assertEqual(result2, undefined);
+// assertEqual(result3, undefined);
 
 module.exports = countLetters;
