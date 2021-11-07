@@ -27,9 +27,6 @@ const assertArraysEqual = (arr1, arr2) => {
 The map function will return a new array based on the results of the callback function.
  */
 
-const words = ["ground", "control", "to", "major", "tom"];
-const numbers = [1, 2, 3, 4, 5];
-
 const map = function(array, callback) {
   const results = [];
   for (let item of array) {
@@ -39,6 +36,10 @@ const map = function(array, callback) {
 };
 
 //TEST CASES//
+
+// const words = ["ground", "control", "to", "major", "tom"];
+// const numbers = [1, 2, 3, 4, 5];
+
 // const results1 = map(words, word => word[0]);
 // assertArraysEqual(results1, ["g", "c", "t", "m", "t"]);
 
@@ -54,5 +55,5 @@ const map = function(array, callback) {
 // const results5 = map([], item => item[1]);
 // assertArraysEqual(results5, []);
 
-module.exports = map
+module.exports = map;
 

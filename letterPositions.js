@@ -1,31 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`⭐️⭐️⭐️ Assertion Passed: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`🔥🔥🔥 Assertion Failed: [${actual}] !== [${expected}]`);
-  }
-};
-
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = (arr1, arr2) => {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`⭐️⭐️⭐️ Assertion Passed: [${arr1}] === [${arr2}]`);
-  } else {
-    console.log(`🔥🔥🔥 Assertion Failed: [${arr1}] !== [${arr2}]`);
-  }
-};
-
 // MAIN FUNCTION
 const letterPositions = function(sentence) {
   const string = sentence.toLowerCase();
@@ -45,6 +17,35 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+// TEST/ASSERTION FUNCTIONS
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`⭐️⭐️⭐️ Assertion Passed: [${actual}] === [${expected}]`);
+//   } else {
+//     console.log(`🔥🔥🔥 Assertion Failed: [${actual}] !== [${expected}]`);
+//   }
+// };
+
+// const eqArrays = (arr1, arr2) => {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+
+// const assertArraysEqual = (arr1, arr2) => {
+//   if (eqArrays(arr1, arr2)) {
+//     console.log(`⭐️⭐️⭐️ Assertion Passed: [${arr1}] === [${arr2}]`);
+//   } else {
+//     console.log(`🔥🔥🔥 Assertion Failed: [${arr1}] !== [${arr2}]`);
+//   }
+// };
+
 // TEST CASES
 // const result1 = letterPositions('hello');
 // assertArraysEqual(result1['h'], [0]);
@@ -56,7 +57,7 @@ const letterPositions = function(sentence) {
 // assertEqual(result2[" "], undefined);
 // assertEqual(result2["z"], undefined);
 
-module.exports = letterPositions
+module.exports = letterPositions;
 
 
 

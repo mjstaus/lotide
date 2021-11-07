@@ -31,5 +31,5 @@ module.exports = {
   middle,
   tail,
   takeUntil,
-  without, 
+  without,
 };

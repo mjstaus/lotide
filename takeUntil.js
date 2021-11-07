@@ -4,27 +4,6 @@ The function will return a "slice of the array with elements taken from the begi
 To keep things simple, the callback should only be provided one value: The item in the array.
  */
 
-// TEST FUNCTIONS //
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i ++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = (arr1, arr2) => {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`⭐️⭐️⭐️ Assertion Passed: [${arr1}] === [${arr2}]`);
-  } else {
-    console.log(`🔥🔥🔥 Assertion Failed: [${arr1}] !== [${arr2}]`);
-  }
-};
-
 // MAIN FUNCTION //
 const takeUntil = (array, callback) => {
   for (let item of array) {
@@ -33,6 +12,27 @@ const takeUntil = (array, callback) => {
     }
   } return array;
 };
+
+// TEST FUNCTIONS //
+// const eqArrays = (arr1, arr2) => {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   for (let i = 0; i < arr1.length; i ++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+
+// const assertArraysEqual = (arr1, arr2) => {
+//   if (eqArrays(arr1, arr2)) {
+//     console.log(`⭐️⭐️⭐️ Assertion Passed: [${arr1}] === [${arr2}]`);
+//   } else {
+//     console.log(`🔥🔥🔥 Assertion Failed: [${arr1}] !== [${arr2}]`);
+//   }
+// };
 
 // TEST CASES //
 // const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
@@ -50,4 +50,4 @@ const takeUntil = (array, callback) => {
 // const results4 = takeUntil(data3, x => x > 10);
 // assertArraysEqual(results4, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
-module.exports = takeUntil
+module.exports = takeUntil;

@@ -26,4 +26,4 @@ const findKeyByValue = (object, value) => {
 // assertEqual(findKeyByValue(bestTVShowsByGenre, ""), undefined);
 // assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sci_fi");
 
-module.exports = findKeyByValue
+module.exports = findKeyByValue;

@@ -1,12 +1,3 @@
-// TEST FUNCTIONS //
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`⭐️⭐️⭐️ Assertion Passed: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`🔥🔥🔥 Assertion Failed: [${actual}] !== [${expected}]`);
-  }
-};
-
 // MAIN FUNCTION //
 /* Implement the function findKey which takes in an object and a callback. It should scan the object and return the first key for which the callback returns a truthy value. If no key is found, then it should return undefined. */
 
@@ -18,6 +9,15 @@ const findKey = (object, callback) => {
     }
   } return undefined;
 };
+
+// TEST FUNCTIONS //
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`⭐️⭐️⭐️ Assertion Passed: [${actual}] === [${expected}]`);
+//   } else {
+//     console.log(`🔥🔥🔥 Assertion Failed: [${actual}] !== [${expected}]`);
+//   }
+// };
 
 // TEST CASES //
 
@@ -47,4 +47,4 @@ const findKey = (object, callback) => {
 // Magic string /magic number = unbound strings or numbers, not stored to variable
 //NEVER have any freely written strings or numbers floating around
 
-module.exports = findKey
+module.exports = findKey;

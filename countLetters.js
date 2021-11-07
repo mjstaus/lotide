@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`⭐️⭐️⭐️ Assertion Passed: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`🔥🔥🔥 Assertion Failed: [${actual}] !== [${expected}]`);
-  }
-};
-
 // MAIN FUNCTION
 const countLetters = (input) => {
   if (!input) {
@@ -26,6 +18,15 @@ const countLetters = (input) => {
   }
   return results;
 };
+
+//TEST FUNCTION
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`⭐️⭐️⭐️ Assertion Passed: [${actual}] === [${expected}]`);
+//   } else {
+//     console.log(`🔥🔥🔥 Assertion Failed: [${actual}] !== [${expected}]`);
+//   }
+// };
 
 
 // TEST CASES
