@@ -1,25 +1,4 @@
-//TEST/ASSERTION FUNCTIONS
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i ++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
 
-const assertArraysEqual = (arr1, arr2) => {
-  if (eqArrays(arr1, arr2)) {
-    console.log(`⭐️⭐️⭐️ Assertion Passed: [${arr1}] === [${arr2}]`);
-  } else {
-    console.log(`🔥🔥🔥 Assertion Failed: [${arr1}] !== [${arr2}]`);
-  }
-};
-
-//MAIN FUNCTION
 const middle = (arr) => {
   if (arr.length < 3) { //check if array is at least 3 (otherwise return empty array)
     return [];
@@ -31,10 +10,4 @@ const middle = (arr) => {
   }
 };
 
-// TEST CODE
-assertArraysEqual(middle([1, 2, 15, 4, 5, 7]), [15, 4]);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle(["Ellie", "Abby", "Dina"]), ["Abby"]);
-assertArraysEqual(middle(["1", "2", "3", "4"]), ["2", "3"]);
+module.exports = middle;
