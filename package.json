@@ -2,7 +2,7 @@
   "name": "@mstaus/lotide",
   "version": "1.0.0",
   "description": "Lotide Project for Lighthouse Labs Flex Program",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
