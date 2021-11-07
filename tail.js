@@ -1,9 +1,11 @@
 const tail = function(arr) {
-  let tailArr = [];
+  let tailArr = []
   if (arr) {
-    tailArr.push(arr.slice(1));
+    tailArr = arr.slice(1);
   }
   return tailArr;
 };
+
+console.log(tail([5, 6,7]))
 
 module.exports = tail;
