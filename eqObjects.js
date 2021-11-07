@@ -1,3 +1,15 @@
+const eqArrays = (arr1, arr2) => {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  for (let i = 0; i < arr1.length; i ++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
 // MAIN FUNCTION
 const eqObjects = (object1, object2) => {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
@@ -13,9 +25,6 @@ const eqObjects = (object1, object2) => {
   } return true;
 };
 
-
-//TEST/ASSERTION FUNCTIONS
-
 // TEST/ASSERTION FUNCTIONS
 // const assertEqual = function(actual, expected) {
 //   if (actual === expected) {
@@ -23,18 +32,6 @@ const eqObjects = (object1, object2) => {
 //   } else {
 //     console.log(`🔥🔥🔥 Assertion Failed: [${actual}] !== [${expected}]`);
 //   }
-// };
-
-// const eqArrays = (arr1, arr2) => {
-//   if (arr1.length !== arr2.length) {
-//     return false;
-//   }
-//   for (let i = 0; i < arr1.length; i ++) {
-//     if (arr1[i] !== arr2[i]) {
-//       return false;
-//     }
-//   }
-//   return true;
 // };
 
 //TEST CASES
