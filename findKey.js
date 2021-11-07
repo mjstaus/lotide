@@ -46,3 +46,5 @@ assertEqual(findKey(restaurantStars,  x => x.stars > 2), "Akaleri");
 //NOTES:
 // Magic string /magic number = unbound strings or numbers, not stored to variable
 //NEVER have any freely written strings or numbers floating around
+
+module.exports = findKey

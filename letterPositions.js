@@ -56,6 +56,8 @@ assertArraysEqual(result2["n"], [9]);
 assertEqual(result2[" "], undefined);
 assertEqual(result2["z"], undefined);
 
+module.exports = letterPositions
+
 
 
 

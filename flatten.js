@@ -37,3 +37,5 @@ const flatten = (arr) => {
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1,2,3,4,5,6]);
 assertArraysEqual(flatten([1, 2, [3, 4], 5, []]), [1,2,3,4,5]);
 assertArraysEqual(flatten([1, "5", "pony", [4, undefined]]), [1, "5", "pony", 4, undefined]);
+
+module.exports = flatten

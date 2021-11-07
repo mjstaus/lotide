@@ -56,3 +56,4 @@ assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 //   })
 // }
 
+module.exports = without

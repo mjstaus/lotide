@@ -54,3 +54,5 @@ assertArraysEqual(results4, ["1", "2", "3", "4", "5"]);
 const results5 = map([], item => item[1]);
 assertArraysEqual(results5, []);
 
+module.exports = map
+
