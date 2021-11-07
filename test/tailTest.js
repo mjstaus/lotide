@@ -1,12 +1,17 @@
-const assertEqual = require("../assertEqual");
+const assert = require('chai').assert;
 const tail = require("../tail");
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
-
-assertEqual(tail([5,6,7]).toString(), [6,7].toString());
-assertEqual(tail(["Hello", "Lighthouse", "Labs"]).toString(), ["Lighthouse", "Labs"].toString());
-assertEqual(tail([5]).toString(), [].toString());
-assertEqual(tail().toString(), [].toString());
+describe("#tail", () => {
+  it("returns [6,7] for [5, 6, 7]", () => {
+    assert.deepEqual(tail([5, 6, 7]), [6, 7]);
+  });
+  it("returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(['Hello', 'Lighthouse', 'Labs']), ['Lighthouse', 'Labs']);
+  });
+  it("returns empty array for [5]", () => {
+    assert.deepEqual(tail([5]), []);
+  });
+  it("returns empty array when no argument passed", () => {
+    assert.deepEqual(tail(), []);
+  });
+});
