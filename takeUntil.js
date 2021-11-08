@@ -1,8 +1,5 @@
-/*
-The function will return a "slice of the array with elements taken from the beginning." It should keep going until the callback/predicate returns a truthy value.
-
-To keep things simple, the callback should only be provided one value: The item in the array.
- */
+//// Function Description ////
+// Function takeUntil will return a slice of the array argument with elements taken from the beginning. The slice ends at the array index at which the callback returns a truthy value. 
 
 const takeUntil = (array, callback) => {
   for (let item of array) {

@@ -1,8 +1,5 @@
-/* Our map function will take in two arguments:
-  - An array to map
-  - A callback function
-The map function will return a new array based on the results of the callback function.
- */
+//// Function Description ////
+// Function map will accept an array and a callback function, and will return a new array based on the results of the callback function
 
 const map = function(array, callback) {
   const results = [];

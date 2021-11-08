@@ -1,3 +1,5 @@
+//// Function Description ////
+// Function middle accepts an array and returns an array containing the middle-most element(s) of the array.
 
 const middle = (arr) => {
   if (arr.length < 3) { //check if array is at least 3 (otherwise return empty array)

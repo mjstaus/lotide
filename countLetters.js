@@ -1,3 +1,6 @@
+//// Function Description ////
+// Function countLetters accepts a string and then returns an object containing a count of each of the letters in that string
+
 const countLetters = (input) => {
   if (!input || typeof input !== "string") {
     return;

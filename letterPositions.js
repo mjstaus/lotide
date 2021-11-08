@@ -1,3 +1,6 @@
+//// Function Description ////
+// Function letterPositions accepts a string and returns an object containing all characters in the string (keys) and the indices where each character is found (values).
+
 const letterPositions = function(sentence) {
   const string = sentence.toLowerCase();
   const results = {};
