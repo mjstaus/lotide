@@ -3,7 +3,7 @@ const countLetters   = require('../countLetters');
 
 describe("#countLetters", () => {
   it("returns an object containing 'e': 5 for input 'NEWSFLASH: Ellie wins dog of the year award'", () => {
-    const result1 = countLetters("NEWSFLASH: Ellie wins dog of the year award")
+    const result1 = countLetters("NEWSFLASH: Ellie wins dog of the year award");
     assert.strictEqual(result1["e"], 5);
   });
 
