@@ -1,5 +1,5 @@
 const countLetters = (input) => {
-  if (!input) {
+  if (!input || typeof input !== "string") {
     return;
   }
   const stringToCount = input.toLowerCase().replaceAll(" ", "");

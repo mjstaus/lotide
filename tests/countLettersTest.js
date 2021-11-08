@@ -18,11 +18,16 @@ describe("#countLetters", () => {
   it("returns undefined when empty string is passed in", () => {
     assert.strictEqual(countLetters(""), undefined);
   });
-});
-// const result2 = countLetters();
-// const result3 = countLetters(" ");
-// console.log(result3);
 
-// assertEqual(result1["l"], 3);
-// assertEqual(result2, undefined);
-// assertEqual(result3, undefined);
+  it("returns undefined when array is passed in", () => {
+    assert.strictEqual(countLetters(["HELLO I AM ARRAY"]), undefined);
+  });
+
+  it("returns undefined when number is passed in", () => {
+    assert.strictEqual(countLetters(4), undefined);
+  });
+
+  it("returns undefined when object is passed in", () => {
+    assert.strictEqual(countLetters({"HELLO": "I AM OBJECT"}), undefined);
+  });
+});
