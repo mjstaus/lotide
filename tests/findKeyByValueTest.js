@@ -10,10 +10,22 @@ describe("#findKeybyValue", () => {
     };
     assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
   });
+
+  it("returns undefined when passed bestTVShowsByGenre object and 'That 70's Show'", () => {
+    const bestTVShowsByGenre = {
+      sciFi: "The Expanse",
+      comedy: "Brooklyn Nine-Nine",
+      drama: "The Wire",
+    };
+    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "That 70's Show"), undefined);
+  });
+
+  it("returns undefined when passed bestTVShowsByGenre object and empty string", () => {
+    const bestTVShowsByGenre = {
+      sciFi: "The Expanse",
+      comedy: "Brooklyn Nine-Nine",
+      drama: "The Wire",
+    };
+    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, ""), undefined);
+  });
 });
-
-
-// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
-// assertEqual(findKeyByValue(bestTVShowsByGenre, ""), undefined);
-// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sci_fi");
