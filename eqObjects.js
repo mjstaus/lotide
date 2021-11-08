@@ -1,14 +1,4 @@
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i ++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require("./eqArrays");
 
 // MAIN FUNCTION
 const eqObjects = (object1, object2) => {
@@ -24,15 +14,6 @@ const eqObjects = (object1, object2) => {
     }
   } return true;
 };
-
-// TEST/ASSERTION FUNCTIONS
-// const assertEqual = function(actual, expected) {
-//   if (actual === expected) {
-//     console.log(`⭐️⭐️⭐️ Assertion Passed: [${actual}] === [${expected}]`);
-//   } else {
-//     console.log(`🔥🔥🔥 Assertion Failed: [${actual}] !== [${expected}]`);
-//   }
-// };
 
 //TEST CASES
 // const ab = { a: "1", b: "2" };
