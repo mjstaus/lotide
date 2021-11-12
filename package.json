@@ -1,6 +1,6 @@
 {
   "name": "@mstaus/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lotide Project for Lighthouse Labs Flex Program",
   "main": "index.js",
   "directories": {
