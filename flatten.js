@@ -2,7 +2,7 @@
 // Function flatten accepts an array (containing nested arrays), and returns a single-level array
 
 const flatten = (arr) => {
-  let flattened = []; 
+  let flattened = [];
   for (let i = 0; i < arr.length; i ++) {
     if (!Array.isArray(arr[i])) {
       flattened.push(arr[i]);

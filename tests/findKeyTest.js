@@ -1,17 +1,6 @@
 const assert = require('chai').assert;
 const findKey   = require('../findKey');
 
-
-//
-// assertEqual(findKey(restaurantStars,  x => x.stars === 5), undefined);
-// assertEqual(findKey(restaurantStars,  x => x.stars > 2), AKALERI);
-
-// assertEqual(findKey(restaurantStars,  x => x.stars > 2), "Akaleri");
-
-//NOTES:
-// Magic string /magic number = unbound strings or numbers, not stored to variable
-//NEVER have any freely written strings or numbers floating around
-
 describe("#findKey", () => {
   it("returns 'noma' when passed callback for x.stars === 2", () => {
     const restaurantStars = {
