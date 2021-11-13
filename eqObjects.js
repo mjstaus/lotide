@@ -8,8 +8,10 @@ const eqObjects = (object1, object2) => {
     if (Array.isArray(object1[key]) || Array.isArray(object2[key])) { //if value is an array
       return eqArrays(object1[key], object2[key]);
     } else if (typeof object1[key] === "object") { //if value is a non-array object
-      return eqObjects(object1[key], object2[key]);
-    } else if (object1[key] !== object2[key]) { 
+      if (!eqObjects(object1[key], object2[key])) {
+        return false;
+      }
+    } else if (object1[key] !== object2[key]) {
       return false;
     }
   }
