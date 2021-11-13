@@ -1,5 +1,5 @@
 //// Function Description ////
-// Function countOnly accepts an array and an object. It returns an object containing counts of items listed as truthy per the parameter.
+// Function countOnly accepts an array and an object. It returns an object containing counts of items listed as truthy per the parameter. 
 
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
